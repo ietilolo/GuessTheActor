@@ -49,7 +49,10 @@ function askQuestion(){
       if ( e.target.innerHTML === question.answer ){
         currIndex++;
         score++;
-        askQuestion();
+        e.target.classList.add("selected");
+        setTimeout(() => {
+          askQuestion();
+        }, 2000);
       } else {
         currIndex++;
         if ( score > 0 ){
