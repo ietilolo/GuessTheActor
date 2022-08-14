@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Guess The Actor - by JeddyCodes 2020</title>
+
+  <link rel="stylesheet" href="./normalize.css">
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body>
+
+  <!-- ------------------- -->
+  <!-- NAVIGATION : HIDE -->
+  <!-- ------------------- -->
+  <div class="intro-container">
+    <div class="intro-header">
+      <h2>Guess The Actor</h2>
+    </div>
+    <div class="intro-body">
+      <p>Your goal is to correctly guess the celeb before the time runs out by only seeing parts of their face!</p>
+    </div>
+    <div class="intro-footer">
+      <a href="#" class="btn">Start Game</a>
+    </div>
+  </div>
+
+  <!-- ------------------- -->
+  <!-- GAME SCREEN : END-->
+  <!-- ------------------- -->
+  <div class="game-container end">
+    <div class="game-header">
+      <h3>Who is this actor?</h3>
+    </div>
+    <div class="game-body">
+      <div class="game-image">
+        <div class="shade" id="shade-1"></div>
+        <div class="shade" id="shade-2"></div>
+        <div class="shade" id="shade-3"></div>
+        <div class="shade" id="shade-4"></div>
+      </div>
+    </div>
+    <div class="game-footer">
+      <div class="option" id="option-1">Samuel. L Jackson
+      </div>
+      <div class="option" id="option-2">Will Smith</div>
+      <div class="option selected" id="option-3">Dwayne Johnson</div>
+      <div class="option" id="option-4">Jackie Chan</div>
+    </div>
+  </div>
+
+  <!-- ------------------- -->
+  <!-- RESULTS SCREEN -->
+  <!-- ------------------- -->
+  <div class="results-container hide">
+    <div class="results-header">
+      <h2>Your Results</h2>
+    </div>
+    <div class="results-body">
+      <p>You got 4/7 correct</p>
+    </div>
+    <div class="results-footer">
+      <a class="btn" href="">Play again</a>
+    </div>
+  </div>
+
+  <script src="./actors.js"></script>
+  <script src="./script.js"></script>
+</body>
+
+</html>

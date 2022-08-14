@@ -1,0 +1,93 @@
+* { margin: 0px; padding: 0px; }
+body {
+  font-family: sans-serif;
+  min-height: 100vh;
+  background-image: url("./img/body-bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.intro-container, .results-container {
+  background-color: rgb(201, 21, 54);
+  width: 80%;
+  padding: 10px;
+  color: azure;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+}
+
+.intro-header, .results-header {
+  padding-bottom: 5px;
+  color: white;
+}
+
+.intro-footer a, .results-footer a {
+  padding: 5px 10px;
+  display: inline-block;
+  margin-top: 10px;
+  background-color: white;
+  text-decoration: none;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  transition: all .2s ease-in-out;
+}
+
+.intro-footer a:hover, .results-footer a:hover {
+  background-color: rgb(205, 205, 205);
+}
+
+.intro-container.hide, .results-container.hide {
+  display: none;
+}
+
+.game-container {
+  background-color: rgba(240, 248, 255, 0.5);
+  min-width: 80%;
+}
+
+.game-header {
+  padding: 10px;
+  text-align: center;
+}
+
+.game-image {
+  background-image: url("./img/therock.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.shade {
+  height: 80px;
+  background-color: black;
+}
+
+#shade-2 {
+  background-color: rgba(0, 0, 0, 0.0);
+}
+
+#shade-4 {
+  background-color: rgba(0, 0, 0, 0.0);
+}
+
+.game-footer {
+  display: flex;
+  flex-direction: column;
+}
+
+.option {
+  padding: 10px;
+  background-color: rgb(225, 152, 16);
+}
+
+.option.selected {
+  background-color: #f5f5f5;
+  color: black;
+}
+
+.game-container.end {
+  display: none;
+}
