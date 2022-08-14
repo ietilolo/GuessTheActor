@@ -32,8 +32,13 @@ function askQuestion(){
   {
     game_container.classList.add("end"); // Hide game container
     results_container.classList.remove("hide") //  Show results container
-
   }
+
+  // REMOVE SELECTED CLASS FROM ANY BUTTON
+  game_container.querySelectorAll(".option").forEach(el => {
+    el.classList.remove("selected");
+  });
+
   let question = actors[currIndex];
 
   // SETUP QUESTION VARIABLES
@@ -55,10 +60,10 @@ function askQuestion(){
         }, 2000);
       } else {
         currIndex++;
-        if ( score > 0 ){
-          score--;
-        }
-        askQuestion();
+        e.target.classList.add("selected-wrong");
+        setTimeout(() => {
+          askQuestion();
+        }, 2000);
       }
     }
   });
